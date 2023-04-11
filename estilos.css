@@ -1,0 +1,72 @@
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+    list-style: none;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    color: white;
+    padding: 4px;
+    border-bottom: 1px solid rgb(112, 2, 167);
+    border-left: 2px solid rgb(112, 2, 167);
+    border-right: 2px solid rgb(112, 2, 167);
+    background-color: blueviolet;
+    text-align: center;
+}
+
+ul li:first-child {
+    border-top: 2px solid rgb(112, 2, 167);
+}
+
+ul li:hover {
+    cursor: pointer;
+    background-color: rgb(162, 73, 245);
+    transform: scale(1.1);
+    transition: all 0.4s;
+    border-top: 2px solid rgb(112, 2, 167);
+    border-bottom: 2px solid rgb(112, 2, 167);
+    box-shadow: 5px 5px 5px rgb(112, 2, 167);
+}
+
+ul.menu {
+    width: 100%;
+    float: left;
+}
+
+ul.menu li {
+    float: left;
+    border-left: 2px solid rgb(112, 2, 167);
+    border-bottom: 2px solid rgb(112, 2, 167);
+    border-top: 2px solid rgb(112, 2, 167);
+    border-right: none;
+}
+
+ul.menu li:last-child {
+    border-right: 2px solid rgb(112, 2, 167);
+}
+
+ul.menu li:hover {
+    border-right: 2px solid rgb(112, 2, 167);
+}
+
+@media (max-width: 350px) {
+    ul.menu {
+        width: 200px;
+        float: none;
+    }
+
+    ul.menu li {
+        float: none;
+    }
+
+    ul.menu li:first-child {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+}
